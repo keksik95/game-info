@@ -1,15 +1,18 @@
 import Link from "next/link";
 import styles from "../Header/Header.module.css";
+import { useState } from "react";
+
 function Header() {
+  let [active, setActive] = useState(false);
+
   return (
-    <div className="container">
+    <div className="container header">
       <div className={styles.inner}>
         <Link href="/">
           <div>
             <svg
               className={styles.logo}
               viewBox="-102.4 -102.4 1228.80 1228.80"
-              class="icon"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
@@ -35,7 +38,7 @@ function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 stroke="#CCCCCC"
-                stroke-width="6.144"
+                strokeWidth="6.144"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <path
@@ -82,9 +85,30 @@ function Header() {
         <nav className={styles.nav}>
           <div>Home</div>
           <div>Top Games</div>
-          <div>About Us</div>
+          <div>
+            <div
+              className={styles.trigger}
+              onClick={() => {
+                setActive(!active);
+              }}
+            >
+              Discover
+            </div>
+            <div className={` ${active ? styles.active : styles.inactive}`}>
+              <div>hi hi dropDown</div>
+              <Dropdown />
+            </div>
+          </div>
         </nav>
       </div>
+    </div>
+  );
+}
+
+function Dropdown() {
+  return (
+    <div className={styles.item}>
+      <div>item</div>
     </div>
   );
 }

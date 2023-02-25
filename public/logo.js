@@ -1,6 +1,6 @@
 <svg
+  className={styles.logo}
   viewBox="-102.4 -102.4 1228.80 1228.80"
-  class="icon"
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
   fill="#000000"
@@ -26,7 +26,7 @@
     strokeLinecap="round"
     strokeLinejoin="round"
     stroke="#CCCCCC"
-    stroke-width="6.144"
+    strokeWidth="6.144"
   ></g>
   <g id="SVGRepo_iconCarrier">
     <path

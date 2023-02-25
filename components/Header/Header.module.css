@@ -22,8 +22,11 @@
   top: 6px;
   cursor: pointer;
 }
+.search svg path {
+  stroke: #5d3891;
+}
 .search:hover svg path {
-  stroke: blueviolet;
+  stroke: #bbe1fa;
 }
 .nav {
   display: flex;
@@ -35,10 +38,16 @@
   cursor: pointer;
 }
 .nav div:hover {
-  color: blueviolet;
+  color: #bbe1fa;
 }
 .logo {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+.active {
+  display: flex;
+}
+.inactive {
+  display: none;
 }

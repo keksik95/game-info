@@ -1,6 +1,8 @@
 :root {
-  --bg: #d6ebee;
-  --textColor: #001b48;
+  --headerNfooterBg: #5d3891;
+  --textColor: #000;
+  --headerNfooterTextColor: #fff;
+  --bg: #e8e2e2;
 }
 @font-face {
   font-family: "OpenSans";
@@ -26,7 +28,11 @@
   background-color: var(--bg);
   color: var(--textColor);
 }
-
+.footer,
+.header {
+  background: var(--headerNfooterBg);
+  color: var(--headerNfooterTextColor);
+}
 .star {
   width: 30px;
   height: 30px;
